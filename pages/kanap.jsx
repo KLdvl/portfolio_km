@@ -1,61 +1,67 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react';
-import cryptoImg from '../public/assets/projects/crypto.jpg'
+import kanapImg from '../public/assets/projects/kanap.jpg'
 import {RiRadioButtonFill} from 'react-icons/ri'
 
 const Crypto = () => {
     return (
         <div className="w-full">
             <div className="w-screen h-[30vh] lg:h-[40vh] relative">
-                <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/70 z-10"/>
+                <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/40 z-10 shadow-xl"/>
                 <Image
                     className='absolute z-1'
                     layout='fill'
                     objectFit='cover'
-                    src={cryptoImg}
+                    src={kanapImg}
                     alt='/'
                 />
                 <div
                     className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-                    <h2 className="py-2">Crypto Finder</h2>
-                    <h3>React JS / Tailwind / Firebase</h3>
+                    <h2 className="py-2">Couch commercial app</h2>
+                    <h3>HTML 5 / SCSS / JS</h3>
                 </div>
             </div>
             <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
                 <div className="col-span-4">
                     <p>Project</p>
                     <h2>Overview</h2>
-                    <p>This app was built using React JS and is hosted on Firebase. Users are able to search properties
-                        based on an Address, City or ZIP code to retrieve a list of active properties currently for
-                        sale. You will be able to view property information as well as the specific location of the
-                        property integrated with the Google Maps API. User authentication is available so you can signup
-                        & signin to your account with an email address in order to save your favorite properties. This
-                        is made possible with Zillow API.</p>
-                    <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-                    <button className="px-8 py-2 mt-4">Code</button>
+                    <p>This app was built using mainly JS to dynamically link backend to front-end. The app is a
+                        classical commercial app. You can add the product that you have chose to a cart stored in
+                        localstorage, so that it persists throughout navigation on site. You can add and remove objects
+                        to your cart and when order is passed, you have a unique order number which is sent to you.</p>
+                    <Link href="https://mkwebd-kanap-front.netlify.app/html/">
+                        <a target="_blank">
+                            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+                        </a>
+                    </Link>
+                    <Link href="https://github.com/MkWebD/Kanap_front">
+                        <a target="_blank">
+                            <button className="px-8 py-2 mt-4">Code</button>
+                        </a>
+                    </Link>
                 </div>
                 <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
                     <div className="p-2">
                         <p className="text-center font-bold pb-2">Technologies</p>
                         <div className="grid grid-cols-3 md:grid-cols-1">
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1"/> React
+                                <RiRadioButtonFill className="pr-1"/> HTML 5
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1"/> Tailwind
+                                <RiRadioButtonFill className="pr-1"/> CSS 3
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
                                 <RiRadioButtonFill className="pr-1"/> Javascript
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1"/> Firebase
+                                <RiRadioButtonFill className="pr-1"/> Github
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1"/> Google API
+                                <RiRadioButtonFill className="pr-1"/> Node.Js
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
-                                <RiRadioButtonFill className="pr-1"/> Zillow API
+                                <RiRadioButtonFill className="pr-1"/> Express.Js
                             </p>
                         </div>
                     </div>

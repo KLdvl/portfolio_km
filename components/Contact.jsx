@@ -1,7 +1,6 @@
 import React from 'react';
 import {FaGithub, FaLinkedinIn} from "react-icons/fa";
 import {AiOutlineMail} from "react-icons/ai";
-import {BsFillPersonLinesFill} from "react-icons/bs";
 import {HiOutlineChevronDoubleUp} from "react-icons/hi";
 import Link from 'next/link'
 
@@ -9,7 +8,7 @@ const Contact = () => {
     return (
         <div id="contact" className="w-full lg:h-screen">
             <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-                <p className="text-xl tracking-widest uppercase text-[#5651e5]">Contact</p>
+                <p className="text-xl tracking-widest uppercase text-[#1b6dc1]">Contact</p>
                 <h2 className="py-4">Get in touch</h2>
                 <div className="grid lg:grid-cols-5 gap-8">
                     {/* left */}
@@ -20,7 +19,7 @@ const Contact = () => {
                                      src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"/>
                             </div>
                             <div>
-                                <h2 className="py-2">Name here</h2>
+                                <h2 className="py-2">Kevin - MKWebDev</h2>
                                 <p>Full-Stack developer</p>
                                 <p className="py-4">I'm available for freelance or full-time positions. Contact me and
                                     let's work together.</p>
@@ -28,21 +27,25 @@ const Contact = () => {
                             <div>
                                 <p className="uppercase pt-8">Connect with me</p>
                                 <div className="flex items-center justify-between py-4">
+                                    <Link href="https://www.linkedin.com/in/kevin-mas-480678232/">
+                                        <a target="_blank">
                                     <div
                                         className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                         <FaLinkedinIn/>
                                     </div>
+                                        </a>
+                                    </Link>
+                                    <Link href="https://github.com/MkWebD">
+                                        <a target="_blank">
                                     <div
                                         className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                         <FaGithub/>
                                     </div>
+                                        </a>
+                                    </Link>
                                     <div
                                         className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                                         <AiOutlineMail/>
-                                    </div>
-                                    <div
-                                        className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <BsFillPersonLinesFill/>
                                     </div>
                                 </div>
                             </div>
@@ -82,8 +85,9 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-center py-12">
                     <Link href="/">
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                            <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30}/>
+                        <div
+                            className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <HiOutlineChevronDoubleUp className="text-[#1b6dc1]" size={30}/>
                         </div>
                     </Link>
                 </div>

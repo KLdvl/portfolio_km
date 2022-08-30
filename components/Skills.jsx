@@ -1,12 +1,14 @@
 import React from 'react';
 import Image from 'next/image'
+import { useSelector } from "react-redux"
 
 function Skills() {
+    const langState = useSelector((state) => state.lang.lang);
     return (
         <div id="skills" className="w-full lg:h-screen p-2">
             <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-                <p className="text-xl tracking-widest uppercase text-[#1b6dc1]">Skills</p>
-                <h2 className="py-4">What I can do ?</h2>
+                <p className="text-xl tracking-widest uppercase text-[#1b6dc1]">{langState === 'gb' ? "Skills" : "Compétences"}</p>
+                <h2 className="py-4">{langState === 'gb' ? "What I can do ?" : "Les technologies que j'utilise"}</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
                     <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">

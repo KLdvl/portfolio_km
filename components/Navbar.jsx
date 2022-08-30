@@ -16,22 +16,6 @@ const Navbar = () => {
 
     const langState = useSelector((state) => state.lang.lang);
 
-    useEffect(() => {
-        if (
-            router.asPath === '/booki' ||
-            router.asPath === '/ohmyfood' ||
-            router.asPath === '/kanap' ||
-            router.asPath === '/hottakes' ||
-            router.asPath === '/groupomania'
-        ) {
-            setNavBg('transparent')
-            setLinkColor('#ecf0f3')
-        } else {
-            setNavBg('#ecf0f3')
-            setLinkColor('#1f2937')
-        }
-    }, [router])
-
     const handleNav = () => {
         setNav(!nav)
     }

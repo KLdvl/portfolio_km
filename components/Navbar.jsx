@@ -30,7 +30,9 @@ const Navbar = () => {
              className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300' : 'fixed w-full h-20 z-[100]'}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Link href="/">
+                    <a>
                     <Image className="cursor-pointer" src="/assets/Logo_MK.png" alt='/' width="125" height="50" />
+                    </a>
                 </Link>
                 <div className="md:hidden">{langState === 'gb' ? <Flags country={'gb'} /> : <Flags country={'fr'} />}</div>
                 <div>
@@ -66,8 +68,10 @@ const Navbar = () => {
                     <div>
                         <div className="flex w-full items-center justify-between">
                             <Link href='/'>
+                                <a>
                                 <Image className="cursor-pointer" onClick={() => setNav(false)} src="/assets/Logo_MK.png" alt='/' width="87"
                                        height="35" />
+                                </a>
                             </Link>
                             <div onClick={handleNav}
                                  className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">

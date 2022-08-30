@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link'
 import { useSelector } from "react-redux"
+import Image from 'next/image'
+import aboutImg from '../public/assets/illustrations/about.jpg'
 
 function About() {
     const langState = useSelector((state) => state.lang.lang);
@@ -20,9 +22,10 @@ function About() {
                 </div>
                 <div
                     className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-                    <img className="rounded-xl"
-                         src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1925&q=80"
-                         alt="/" />
+                    <Image className="rounded-xl"
+                           src={aboutImg}
+                           alt="/"
+                    />
                 </div>
             </div>
         </div>

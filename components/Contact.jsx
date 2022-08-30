@@ -5,6 +5,8 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from 'next/link'
 import emailjs from '@emailjs/browser';
 import { useSelector } from "react-redux"
+import Image from 'next/image'
+import contactImg from '../public/assets/illustrations/contact.jpg'
 
 const Contact = () => {
     const langState = useSelector((state) => state.lang.lang);
@@ -33,8 +35,8 @@ const Contact = () => {
                     <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
                         <div className="lg:p-4 h-full">
                             <div>
-                                <img className="rounded-xl hover:scale-105 ease-in duration-300"
-                                     src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" />
+                                <Image className="rounded-xl hover:scale-105 ease-in duration-300"
+                                     src={contactImg} alt='/' />
                             </div>
                             <div>
                                 <h2 className="py-2">Kevin - MKWebDev</h2>

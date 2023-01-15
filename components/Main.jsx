@@ -1,13 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import Link from 'next/link'
 import { useSelector } from "react-redux"
 
 const Main = () => {
+    const { t, i18n } = useTranslation();
     const langState = useSelector((state) => state.lang.lang);
     return (
-        <div id="home" className="w-full h-screen text-center">
+        <div id="home" className="w-full h-screen text-center">       
             <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center ">
                 <div className="mt-[40%] md:mt-[0]">
                     <p className="uppercase text-sm tracking-widest text-gray-600">{langState === 'gb' ? "Let's build your website or application together" : "Construisons ensemble votre site web ou application web"}</p>
@@ -38,6 +40,7 @@ const Main = () => {
                             </div>
                         </a>
                     </div>
+                    <div>{t("test")}</div>
                 </div>
             </div>
 

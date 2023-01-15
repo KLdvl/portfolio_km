@@ -19,7 +19,7 @@ const Projects = () => {
                                  mainTechnos="HTML 5 / CSS 3" />
                     <ProjectItem title={langState === 'gb' ? 'Food reservation site' : 'Réservation de menus en ligne'} backgroundImg={ohmyfoodImg} projectUrl='/ohmyfood'
                                  mainTechnos="HTML 5 / SASS" />
-                    <ProjectItem title={langState === 'gb' ? 'Couch commercial app' : 'App de vente de canapés'} backgroundImg={kanapImg} projectUrl='/kanap'
+                    <ProjectItem title={langState === 'gb' ? 'Couches commercial app' : 'App de vente de canapés'} backgroundImg={kanapImg} projectUrl='/kanap'
                                  mainTechnos="HTML 5 / CSS 3 / JS" />
                     <ProjectItem title={langState === 'gb' ? 'Sauce sharing app' : 'App de partage de sauces'} backgroundImg={hottakesImg} projectUrl='/hottakes'
                                  mainTechnos="NODE.JS / EXPRESS / MONGODB / ANGULAR" />

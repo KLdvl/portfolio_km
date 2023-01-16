@@ -11,7 +11,7 @@ const Projects = () => {
     const langState = useSelector((state) => state.lang.lang);
     return (
         <div id="projects" className="w-full">
-            <div className="max-w-[1240px] mx-auto px-2 py-16">
+            <div className="max-w-[1240px] mx-auto px-2 py-20">
                 <p className="text-xl tracking-widest uppercase text-[#1b6dc1]">{langState === 'gb' ? "Projects" : "Projets"}</p>
                 <h2 className="py-4">{langState === 'gb' ? "What I have built" : "Ce que j'ai développé"}</h2>
                 <div className="grid md:grid-cols-2 gap-8">

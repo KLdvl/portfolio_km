@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useSelector } from "react-redux"
 
 const Main = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const langState = useSelector((state) => state.lang.lang);
     return (
         <div id="home" className="w-full h-screen text-center">       
@@ -40,7 +40,7 @@ const Main = () => {
                             </div>
                         </a>
                     </div>
-                    <div>{t("test")}</div>
+                    <div>{t("test")}</div>                    
                 </div>
             </div>
 

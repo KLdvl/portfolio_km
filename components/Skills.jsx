@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 function Skills() {
     const { t } = useTranslation();
     return (
-        <div id="skills" className="w-full lg:h-screen p-2">
+        <div id="skills" className="w-full lg:h-screen px-2 py-20">
             <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
                 <p className="text-xl tracking-widest uppercase text-[#1b6dc1]">{t("skills_title")}</p>
                 <h2 className="py-4">{t("skills_subtitle")}</h2>

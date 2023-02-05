@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import React from 'react'
 import Navbar from "../components/Navbar";
-import '../store/i18n';
+import '../i18n/i18n';
 import { Provider } from 'react-redux'
 import { store, persistor } from '../store/index'
 import { PersistGate } from 'redux-persist/integration/react'

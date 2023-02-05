@@ -2,7 +2,7 @@ import React from 'react'
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { useDispatch, useSelector } from "react-redux"
 import {changeLang} from '../store/langSlice'
-import i18n from '../store/i18n';
+import i18n from '../i18n/i18n';
 
 export const Flags = ({ country }) => {
     const langState = useSelector((state) => state.lang.lang);

@@ -2,12 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { Flags } from './Flags'
 import { useSelector } from "react-redux"
 
 const Navbar = () => {
+    const { t } = useTranslation();
     const [nav, setNav] = useState(false)
     const [shadow, setShadow] = useState(false)
     const [navBg, setNavBg] = useState('#ecf0f3')
@@ -38,16 +40,16 @@ const Navbar = () => {
                 <div>
                     <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
                         <Link href="/">
-                            <li className="ml-10 text-sm uppercase hover:border-b">{langState === 'gb' ? 'Home' : 'Accueil'}</li>
+                            <li className="ml-10 text-sm uppercase hover:border-b">{t("navbar_home")}</li>
                         </Link>
                         <Link href="/#about">
-                            <li className="ml-10 text-sm uppercase hover:border-b">{langState === 'gb' ? 'About' : 'A propos'}</li>
+                            <li className="ml-10 text-sm uppercase hover:border-b">{t("navbar_about")}</li>
                         </Link>
                         <Link href="/#skills">
-                            <li className="ml-10 text-sm uppercase hover:border-b">{langState === 'gb' ? 'Skills' : 'Compétences'}</li>
+                            <li className="ml-10 text-sm uppercase hover:border-b">{t("navbar_skills")}</li>
                         </Link>
                         <Link href="/#projects">
-                            <li className="ml-10 text-sm uppercase hover:border-b">{langState === 'gb' ? 'Projects' : 'Projets'}</li>
+                            <li className="ml-10 text-sm uppercase hover:border-b">{t("navbar_projects")}</li>
                         </Link>
                         <Link href="/#contact">
                             <li className="ml-10 text-sm uppercase hover:border-b">Contact</li>
@@ -80,30 +82,30 @@ const Navbar = () => {
                         </div>
                         <div className="border-b border-gray-300 my-4">
                             <p className="w-[85%] md:w-[90%] py-4">
-                                {langState === 'gb' ? "Let's build new Websites and Apps together" : "Construisons ensemble vos sites web et applications"}
+                                {t("navbar_mobile_title")}
                             </p>
                         </div>
                     </div>
                     <div className="py-4 flex flex-col">
                         <ul className="uppercase">
                             <Link href="/">
-                                <li onClick={() => setNav(false)} className="py-4 text-sm">{langState === 'gb' ? 'Home' : 'Accueil'}</li>
+                                <li onClick={() => setNav(false)} className="py-4 text-sm">{t("navbar_home")}</li>
                             </Link>
                             <Link href="/#about">
-                                <li onClick={() => setNav(false)} className="py-4 text-sm">{langState === 'gb' ? 'About' : 'A propos'}</li>
+                                <li onClick={() => setNav(false)} className="py-4 text-sm">{t("navbar_about")}</li>
                             </Link>
                             <Link href="/#skills">
-                                <li onClick={() => setNav(false)} className="py-4 text-sm">{langState === 'gb' ? 'Skills' : 'Compétences'}</li>
+                                <li onClick={() => setNav(false)} className="py-4 text-sm">{t("navbar_skills")}</li>
                             </Link>
                             <Link href="/#projects">
-                                <li onClick={() => setNav(false)} className="py-4 text-sm">{langState === 'gb' ? 'Projects' : 'Projets'}</li>
+                                <li onClick={() => setNav(false)} className="py-4 text-sm">{t("navbar_projects")}</li>
                             </Link>
                             <Link href="/#contact">
                                 <li onClick={() => setNav(false)} className="py-4 text-sm">Contact</li>
                             </Link>
                         </ul>
                         <div className="pt-40">
-                            <p className="uppercase tracking-widest text-[#5651e5]">{langState === 'gb' ? "Let's Connect" : "Se connecter"}</p>
+                            <p className="uppercase tracking-widest text-[#5651e5]">{t("navbar_mobile_connect")}</p>
                             <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                                 <Link href="https://www.linkedin.com/in/kevin-mas-480678232/">
                                     <a target="_blank">

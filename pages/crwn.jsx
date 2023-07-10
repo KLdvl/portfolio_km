@@ -22,12 +22,12 @@ const Crwn = () => {
 					<p>{t("projects_title")}</p>
 					<h2>{t("projects_overview")}</h2>
 					<p>{t("projects_crwn_description")}</p>
-					<Link href="https://https://mkwebdev-crwn-shop.netlify.app/">
+					<Link href="https://mkwebdev-crwn-shop.netlify.app/">
 						<a target="_blank">
 							<button className="px-8 py-2 mt-4 mr-8">Demo</button>
 						</a>
 					</Link>
-					<Link href="https://https://github.com/MkWebD/crwn-shop">
+					<Link href="https://github.com/MkWebD/crwn-shop">
 						<a target="_blank">
 							<button className="px-8 py-2 mt-4">Code</button>
 						</a>

@@ -59,6 +59,9 @@ const en = {
 			"This app was entirely built from scratch. The backend part is written using NodeJs, Express and MongoDB. Everything is stored in the database in a secured way. The app respects the standards of OWASP. It is possible to sign up using email and password, log in. The rest of the API is a classic CRUD API, every user is able to create, update and delete a post. Each user can like / dislike any post, once per post. The first user created in the database will be an administrator who can moderate the social network (he can update and delete any post).",
 		projects_crwn_title: "Online clothing store showcase website",
 		projects_crwn_description: `This showcase website was developed based on an extensive ReactJS training. Fully customizable, it is possible to modify the data displayed on the website by modifying the Firebase database. Users can create an account using an email address and password. It is also possible to log in using a Google account.`,
+		project_evolution_web_title: "Interactive timeline of web development history",
+		project_evolution_web_description:
+			"Embark on a captivating journey through the digital ages with our innovative project—an interactive infographic that charts the Evolution of the Web. From the early days of static web pages to the dynamic and interconnected virtual realm we navigate today, this project offers a visually stunning exploration of the web's transformation over time. Delve into the significant milestones that have shaped the online landscape, uncovering how technological advancements, user behaviors, and creative ingenuity have converged to shape the web as we know it.",
 		// Skills component
 		skills_title: "Skills",
 		skills_subtitle: "What I can do",

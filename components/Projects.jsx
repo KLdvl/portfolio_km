@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import bookiImg from "../public/assets/projects/booki.jpg";
 import crwnImg from "../public/assets/projects/crwn.jpg";
+import evolImg from "../public/assets/projects/evolution_of_web.png";
 import groupomaniaImg from "../public/assets/projects/groupomania.jpg";
 import hottakesImg from "../public/assets/projects/hottakes.jpg";
 import kanapImg from "../public/assets/projects/kanap.jpg";
@@ -51,6 +52,12 @@ const Projects = () => {
 						backgroundImg={crwnImg}
 						projectUrl="/crwn"
 						mainTechnos="REACT JS / REDUX / FIREBASE / STRIPE"
+					/>
+					<ProjectItem
+						title={t("project_evolution_web_title")}
+						backgroundImg={evolImg}
+						projectUrl="/evolutionWeb"
+						mainTechnos="NEXT.JS / SASS / TYPESCRIPT"
 					/>
 				</div>
 			</div>

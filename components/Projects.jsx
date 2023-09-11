@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import bookiImg from "../public/assets/projects/booki.jpg";
 import crwnImg from "../public/assets/projects/crwn.jpg";
 import evolImg from "../public/assets/projects/evolution_of_web.png";
-import groupomaniaImg from "../public/assets/projects/groupomania.jpg";
+import groupomaniaImg from "../public/assets/projects/groupomania.png";
 import hottakesImg from "../public/assets/projects/hottakes.jpg";
 import kanapImg from "../public/assets/projects/kanap.jpg";
 import ohmyfoodImg from "../public/assets/projects/ohmyfood.jpg";
